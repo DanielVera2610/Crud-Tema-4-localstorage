@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRUD </title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <table id="contenedor">
+        <tr>
+            <td>
+                <div>
+                    <h2> Agregar alumno </h2>
+                  </div>
+                <form id="formulario" autocomplete="off">
+                    <div>
+                        <label for="CodigoAl"> Código </label>
+                        <input type="text" name="CodigoAl" required="" pattern="[0-9]+" id="CodigoAl" placeholder="Agregue solo números">
+                    </div>
+                    <div>
+                        <label for="Alumno"> Nombre del Alumno </label>
+                        <input type="text" name="Alumno" required="" pattern="[a-z A-Z]+"  id="Alumno" placeholder="Agregue solo letras">
+                    </div>
+                    <div>
+                        <label for="Grado"> Grado </label>
+                        <input minlength="3" maxlength="3" type="text" name="Grado" required="" id="Grado" placeholder="Se admiten números y letras, formato: 5to">
+                    </div>
+                    <div>
+                        <label for="Grupo"> Grupo </label>
+                        <input minlength="3" maxlength="3" type="text" name="Grupo" required="" id="Grupo" placeholder="Se admiten números y letras, formato: Ms5">
+                    </div>
+                    <div class="Botones">
+                        <input type="submit" value="Agregar" id="agregar">
+                        <input type="reset" value="Limpiar" id="limpiar">
+                    </div>
+                </form>
+                <td>
+                    <table class="lista" id="Encabezados">
+                        <thead>
+                            <tr>
+                                <th> Código </th>
+                                <th> Nombre del Alumno </th>
+                                <th> Grado </th>
+                                <th> Grupo </th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                            
+                        </tbody>
+                    </table>
+                </td>
+        
+            </td>
+        </tr>
+    </table>
+
+    
+    <script src="logica.js"> </script>
+
+   
+  </body>
+</html>

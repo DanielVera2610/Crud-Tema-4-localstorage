@@ -1,0 +1,120 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-image: url('./imgs/internet-g3c66130cd_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+h2{
+    text-align: center;
+}
+
+table{
+    width: 80%;
+    margin: 40px auto;
+    background: rgb(185, 193, 201);
+}
+
+table.lista{
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+td{
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px 15px;
+}
+
+input{
+    width: 91%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(185, 193, 201);
+    border-radius: 10px;
+    outline: none;
+
+}
+
+#agregar, #limpiar{
+background: white;
+padding: 6px 12px;   
+margin: 15px 0 10px;
+display: inline-block;
+border: none;
+outline: none;
+border-radius: 30px;
+font-size: 1rem; 
+cursor: pointer;
+width: 90px;
+
+}
+
+#agregar:hover {
+    background: green;
+
+}
+
+#limpiar:hover {
+    background: blue;
+
+}
+
+button{
+background: white;
+padding: 6px 12px;   
+margin: 15px 0 10px;
+display: inline-block;
+border: none;
+outline: none;
+border-radius: 30px;
+font-size: 1rem; 
+cursor: pointer;
+width: 90px;
+}
+
+.actualizar:hover{
+background: greenyellow;
+}
+
+.eliminar:hover{
+background: red;
+}
+
+.editar:hover{
+background: green;
+}
+
+.cancelar:hover{
+background: red;
+}
+
+@media screen and (max-width: 800px){
+    
+    .table{
+    width: 40%;
+    }
+
+    table.lista{
+        width: 60%;
+        font-size: 13px;
+    }
+
+    input{
+    width: 50%;
+    }
+
+    button{
+        width: 50px;
+        font-size: 13px;
+    }
+}
